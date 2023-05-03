@@ -1,0 +1,158 @@
+html, body, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/The_Royal_Navy_during_the_Second_World_War_A11792.jpg/1200px-The_Royal_Navy_during_the_Second_World_War_A11792.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+#title {
+    font-size: 8rem;
+    font-family: 'Castoro Titling', cursive;
+    color: #F6F1F1;
+}
+
+#start-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input[type="text"] {
+    font-family: 'Fjalla one';
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    background-color: transparent;
+    border: none;
+}
+
+#start-button {
+    font-family: 'Fjalla one';
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#start-button:hover {
+    font-family: 'Fjalla one';
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(90, 90, 90);
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#start-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.score-game-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 4rem;
+    font-family: 'Fjalla one';
+}
+
+#axis-button, #again-button, #back-button {
+    background: transparent;
+    color: black;
+    position: absolute;
+    bottom: 4rem;
+    font-size: 4rem;
+    font-family: 'Fjalla one';
+    border: 0;
+    width: 16rem;
+    cursor: pointer;
+}
+
+#axis-button{
+    background-color: rgb(255, 255, 255, 50%) ;
+}
+
+#axis-button:hover, #again-button:hover, #back-button:hover {
+    color: rgb(69, 69, 69);
+}
+
+#again-button {
+    bottom: 60%;
+    z-index: 2;
+    width: auto;
+}
+
+#back-button {
+    bottom: 50%;
+    z-index: 2;
+}
+
+#message {
+    position: absolute;
+    top: 2rem;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Fjalla one';
+}
+
+#game-content {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.gameboard {
+    background-color: aqua;
+    height: 30rem;
+    width: 30rem;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 5px;
+    padding: 5px;
+        /* adjust as desired */
+}
+
+.player-cell {
+    background-color: blue;
+}
+
+.computer-cell {
+    background-color: blue;
+}
+
+#end-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    opacity: 50%;
+    z-index: 1;
+}

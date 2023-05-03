@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <title>Battleship</title>
-    <script src="main.js"></script>
 </head>
 <body>
-    <p>Hello!</p>
+    <div id="start-content">
+        <p id="title">BATTLESHIP</p>
+        <form id="start-form">
+            <input type="text" id="name-input" name="name" placeholder="YOUR NAME" required>
+            <button type="submit" id="start-button">START</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
